@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic|Ubuntu:300&display=swap");
+
+body {
+  background-color: #494747;
+  color: white;
+  height: 640px;
+  width: 800px;
+}
+
+.background {
+  background-image: url("https://images.idgesg.net/images/article/2018/10/mac-pro-keyboard-mouse-100777237-large.jpg");
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 25%;
+}
+
+.maintext h4 {
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 50px;
+  top: 100px;
+  width: 250px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.bottom {
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  background-color: #348ffc;
+  /*   border:1px solid red; */
+}
+
+.bottom-text {
+  position: relative;
+  font-size: 20px;
+  padding: 15px 0px 0px 50px;
+  font-family: "Nanum Gothic", sans-serif;
+  height: 10px;
+  /*   border:1px solid red; */
+}
+
+#small {
+  font-size: 12px;
+  color: white;
+  width: 300px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.card-container {
+  left: 550px;
+  bottom: 550px;
+  /*   border:1px solid red; */
+  position: relative;
+  width: 50vh;
+  height: 55vh;
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+}
+
+#instruction {
+  position: relative;
+  top: 70px;
+  left: 100px;
+  color: gray;
+  width: 40%;
+  padding: 10px;
+  /*   border: 1px solid red; */
+}
+
+#signup {
+  color: #348ffc;
+  margin: 0 auto;
+  position: relative;
+  left: 140px;
+  top: 60px;
+  font-size: 30px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.login-container {
+  color: black;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+input {
+  /*   display:block; */
+  height: 40px;
+  width: 50%;
+  left: 100px;
+  top: 50px;
+  /*   margin:0 auto; */
+  border: none;
+}
+
+.email,
+.name,
+.pwd {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  font-family: "Open Sans", sans-serif;
+  /*   text-transform:uppercase; */
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  top: 80px;
+  left: 150px;
+  width: 100px;
+  height: 40px;
+  padding: 2px;
+  background: #348ffc;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 10px;
+}
+
+.card p {
+  position: relative;
+  left: 10em;
+  top: 90px;
+  color: gray;
+  font-size: 10px;
+}

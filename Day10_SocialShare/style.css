@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+
+body {
+  font-family: "Fjalla One", sans-serif;
+  background-color: white;
+}
+
+.container {
+  width: 800px;
+  height: 600px;
+  // border: 1px solid red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #56a8c9;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.social-share {
+  width: 330px;
+  height: 450px;
+  background-color: #fffd01;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  & .img {
+    position: relative;
+    top: -9%;
+    left: -5%;
+    // border: 1px solid red;
+    width: 400px;
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+.info {
+  width: 260px;
+  padding: 20px;
+  position: absolute;
+  top: 370px;
+  // border: 1px solid red;
+  & p {
+    margin-top: 5px;
+    font-size: 13px;
+    // border: 1px solid red;
+    color: gray;
+  }
+  & h4 {
+    // border: 1px solid red;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  & .price {
+    // border: 1px solid red;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.social {
+  position: absolute;
+  right: 210px;
+  bottom: 50px;
+  width: 50px;
+  background-color: #1c4864;
+  height: 150px;
+  ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    // border: 1px solid red;
+    list-style: none;
+  }
+
+  li {
+    margin: 0 auto;
+    cursor: pointer;
+    height: 33%;
+    &:hover {
+      background-color: #1b2d30;
+    }
+  }
+
+  .box {
+    // border: 1px solid red;
+    padding: 10px;
+    // aria-hidden: true;
+    margin: auto;
+    font-size: 2em;
+  }
+  .fa-facebook {
+    color: yellow;
+  }
+
+  .fa-twitter {
+    color: #56a8c9;
+  }
+
+  .fa-pinterest {
+    color: #56a8c9;
+  }
+}

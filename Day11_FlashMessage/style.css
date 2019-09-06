@@ -1,0 +1,94 @@
+body {
+  // background-color: #ffe08b;
+}
+
+.container {
+  text-align: center;
+  width: 800px;
+  height: 606px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #938f99;
+  & h2 {
+    color: black;
+  }
+
+  & p {
+    margin: 30px;
+  }
+}
+
+.yay {
+  overflow: hidden;
+  width: 290px;
+  height: 340px;
+  // border: 1px solid red;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.shadow {
+  transform: rotate(-20deg);
+  overflow: hidden;
+  top: 100px;
+  position: absolute;
+  height: 200%;
+  width: 200%;
+  background-color: #fffafa;
+  // border: 1px solid red;
+  z-index: -2;
+}
+
+.snap {
+  overflow: hidden;
+  width: 290px;
+  height: 340px;
+  // border: 1px solid red;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 10px 60px -6px #777;
+  -moz-box-shadow: 0 10px 60px -6px #777;
+  box-shadow: 0 10px 60px -6px #777;
+}
+
+img {
+  margin: 20px auto;
+  display: block;
+  width: 40%;
+  height: 40%;
+  -webkit-mask-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/mask-image.png);
+  mask-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/mask-image.png);
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+button {
+  border: none;
+  background-color: Transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &#cool {
+    color: green;
+  }
+
+  &#try {
+    color: red;
+  }
+}
