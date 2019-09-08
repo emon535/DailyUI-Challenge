@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+
+body {
+  background-color: #0ca5fb;
+}
+
+.container {
+   justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 537px;
+  height: 406px;
+  // border: 1px solid grey;
+  position: absolute;
+  left: 50%;
+  border-radius: 10px;
+  top:50%;
+  transform:translate(-50%,-50%);
+  background-color: white;
+}
+
+.sec {
+   -webkit-animation-name: color2;
+      -webkit-animation-duration: 5s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-delay: 0s;
+}
+
+.time {
+  font-family: 'Righteous', cursive;
+  display:inline-block;
+  // border: 1px solid red;
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 60px;
+  text-align: center;
+  vertical-align: middle;
+  color: grey;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px 1px grey;
+}

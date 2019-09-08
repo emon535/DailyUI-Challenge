@@ -1,0 +1,41 @@
+$size: 35px;
+
+body {
+  background-color: darken(#008be5, 20%);
+  align-content: center;
+}
+
+.icon-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background-color: #008be5;
+  border-radius: 15px;
+}
+
+.circle {
+  border: 4px solid white;
+  width: 40px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  border-radius: 50%;
+}
+
+.half-circle {
+  height: $size;
+  width: $size * 2;
+  border: 4px solid white;
+  border-top-left-radius: $size * 2;
+  border-top-right-radius: $size * 2;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
