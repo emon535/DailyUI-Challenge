@@ -1,0 +1,290 @@
+$backdark: #575f6c;
+$orange: #f1966d;
+$backlite: #989aa0;
+$simpledark: #bdbdbf;
+$white: #eef0f2;
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu&display=swap");
+body {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  font-family: "Josefin Sans", sans-serif;
+}
+.back {
+  position: relative;
+  margin: 0 auto;
+  background-color: $backdark;
+  width: 600px;
+  height: 480px;
+  border-radius: 10px;
+
+  & img {
+    float: left;
+    margin-top: -50px;
+    poisition: relative;
+    opacity: 0.1;
+    width: 200px;
+  }
+}
+
+.dummy-text {
+  position: relative;
+  margin: 0 auto;
+  right: 200px;
+  top: 100px;
+  width: 150px;
+  // border:1px solid red;
+  color: $white;
+  & .title {
+    font-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: $orange;
+  }
+  &.content {
+    margin-top: 0 auto;
+    font-color: $simpledark;
+    font-size: 12px;
+  }
+}
+.order-details {
+  color: white;
+  // border:1px solid blue;
+  width: 150px;
+  margin: 0 auto;
+  // left:10px;
+  right: 200px;
+  top: 250px;
+  position: relative;
+  & h3 {
+    font-size: 40px;
+    text-shadow: 0 4px 8px 0 $simpledark;
+    margin: 0 auto;
+  }
+  & p {
+    font-transform: uppercase;
+    font-size: 10px;
+    margin: 0 auto;
+    padding-top: 10px;
+    color: $simpledark;
+  }
+  & hr {
+    background-color: $simpledark;
+  }
+}
+
+.top {
+  position: relative;
+  left: 150px;
+  bottom: 400px;
+  // float:right;
+  width: 450px;
+  height: 320px;
+  box-shadow: 0 4px 8px 0 $backlite;
+  background-color: $white;
+  color: $backdark;
+  z-axis: 2;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.top button {
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  left: 300px;
+  top: 15px;
+  width: 120px;
+  background: $orange;
+  border: none;
+  border-radius: 5px;
+  // box-shadow: 0 4px 8px 0 $orange;
+  text-transform: uppercase;
+  font-size: 10px;
+  height: 50px;
+}
+
+.visalogo {
+  float: right;
+  padding: 10px;
+  position: relative;
+  // border:1px solid red;
+  top: 0px;
+  width: 80px;
+  & img {
+    float: right;
+    padding: 10px;
+    width: 60px;
+  }
+}
+
+.search {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 10px;
+  // border: 1px solid blue;
+  width: 180px;
+  float: left;
+  position: relative;
+  left: 24px;
+  top: 30px;
+  & img {
+    height: 10px;
+    float: left;
+    margin: 0 auto;
+    // border: 1px solid red;
+    width: 10px;
+    filter: invert(68%) sepia(11%) saturate(140%) hue-rotate(187deg)
+      brightness(88%) contrast(89%);
+  }
+  & p {
+    // border: 1px solid red;
+    float: left;
+    color: #989aa0;
+    padding-left: 5px;
+    margin: 0px;
+  }
+}
+
+.row {
+  // justify-content: space-evenly;
+  justify-content: center;
+  display: inline-grid;
+  // border: 1px solid red;
+  width: 100%;
+  margin: 0 aut0;
+}
+
+.item1 {
+  grid-column: 1 / 2;
+  // border: 1px solid red;
+}
+
+.item2 {
+  grid-column: 2 / 6;
+  // border: 1px solid red;
+}
+.item1 img {
+  width: 150px;
+}
+label {
+  margin: 10px;
+  display: inline;
+  font-size: 10px;
+  font-family: "Nunito", sans-serif;
+}
+input {
+  font-family: "Nunito", sans-serif;
+  background-color: $white;
+  color: red;
+  display: inline-block;
+  border: none;
+  width: 250px;
+  margin: 10px;
+}
+
+input:focus {
+  color: $backdark;
+}
+.name,
+.card,
+.exp,
+.ccv {
+  color: $backdark;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  // padding-left:20px;
+  font-family: "Nunito", sans-serif;
+  /*   text-transform:uppercase; */
+}
+
+#start {
+  width: 100px;
+}
+
+// .product-image{
+//   width: 100%;
+//   border: 1px solid red;
+//   & img {
+//     width:200px;
+//     border: 1px solid red;
+//   }
+// }
+
+#month {
+  margin: 10px;
+  width: 80px;
+  border: none;
+  background-color: $white;
+  color: $backlite;
+  border-bottom: 1px solid $simpledark;
+  font-family: "Nunito", sans-serif;
+}
+
+#year {
+  color: $backlite;
+  font-family: "Nunito", sans-serif;
+  margin: 10px;
+  width: 80px;
+  border: none;
+  background-color: $white;
+  border-bottom: 1px solid $simpledark;
+}
+
+#ccv-input {
+  width: 80px;
+  border: none;
+  background-color: $white;
+  border-bottom: 1px solid $simpledark;
+  margin: 10px;
+}
+
+.review {
+  color: $backlite;
+  font-size: 12px;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  padding: 10px;
+  size: 10px;
+  & p {
+    font-size: 10px;
+    font-family: "Nunito", sans-serif;
+  }
+}
+
+.save {
+  font-size: 15px;
+  color: $white;
+  top: 250px;
+  right: 195px;
+  position: relative;
+  margin: 0 auto;
+  & p {
+    font-size: 12px;
+    float: right;
+    // border:1px solid red;
+    color: $backlite;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 12px;
+  float: left;
+  left: 420px;
+  height: 15px;
+  width: 15px;
+  background-color: $backlite;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checked {
+  color: $orange;
+}

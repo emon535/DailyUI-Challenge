@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #aedba5;
+}
+
+.container {
+  width: 650px;
+  height: 380px;
+/*   border: 1px solid red; */
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  background-color: white;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  
+}
+
+.player {
+  height: 100%;
+}
+
+
+.top {
+  width: 100%;
+  height: 15%;
+  & .back {
+    & a{
+      color : grey;
+      text-decoration: none;
+    }
+    display: inline;
+    float: left;
+    margin: 15px;
+    font-size: 14px;
+    &:hover {
+      border-bottom: 1px solid black;
+    }
+    & i{
+      // border: 1px solid red;
+      color :grey;
+      margin-right : 10px;
+       -webkit-text-stroke: 1px white;
+    }
+  }
+  & .heart {
+    color: grey;
+    position: absolute;
+    right: 0;
+    margin: 15px;
+    display: inline;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.left {
+  border-top: 1px dotted grey;
+  border-right: 1px dotted grey;
+  float: left;
+  height: 85%;
+  width: 35%;
+  & img {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+
+.right {
+  padding: 30px;
+  display: inline-block;
+  border-top: 1px dotted grey;
+  height: 70%;
+  width: 55%;
+  & .title {
+    // border: 1px solid red;
+    font-size: 24px;
+    padding: 20px 0px 0px 0px;
+  }
+  & .sub {
+    text-transform : uppercase;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  & .price {
+    padding: 10px 0px 0px 0px;
+    // border: 1px solid red;
+    font-size: 28px; 
+  }
+ 
+  & .para {
+    font-size: 12px;
+  }
+  
+  & .buttons {
+    & button {
+      margin-top: 10px;
+      font-family: 'Raleway', sans-serif;
+      cursor: pointer;
+      border: none;
+      background-color: Transparent;
+      border :1px solid grey;
+      width: 125px;
+      height: 30px;
+      margin-right: 10px;
+      &:hover {
+        border: 1px solid black;
+      }
+  }
+}
+}
+

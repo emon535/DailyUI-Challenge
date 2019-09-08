@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Suez+One|Ubuntu&display=swap");
+
+body {
+  background-color: #ffe08b;
+}
+
+.container {
+  width: 537px;
+  height: 406px;
+  /*   border: 1px solid red; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.player {
+  height: 90%;
+  // border: 1px solid red;
+  padding: 20px;
+}
+
+.playing {
+  & img {
+    // border: 1px solid red;
+    padding: 5px;
+    width: 70px;
+    margin-top: 1%;
+    border-radius: 15%;
+  }
+  & p {
+    // border: 1px solid red;
+    padding: 0;
+    margin: 2px;
+    font-size: 10px;
+    &#now {
+      font-size: 14px;
+    }
+    & span {
+      color: grey;
+    }
+  }
+  // border: 1px solid red;
+  text-align: center;
+}
+
+.play {
+  width: 90%;
+  height: 50px;
+  // border: 1px solid green;
+  position: absolute;
+  & .play-bar {
+    margin: 0 auto;
+    margin-top: 3%;
+    border: 1px solid wheat;
+    width: 60%;
+    & .inner {
+      // background-color: grey;
+      border: 1px solid grey;
+      height: 100%;
+      width: 50%;
+    }
+  }
+
+  & .button {
+    margin-top: 10px;
+    // border: 1px solid red;
+    justify-content: center;
+    width: 100;
+    position: absolute;
+    & .btn-back {
+      cursor: pointer;
+      transform: perspective(1px) translateY(-50%);
+      position: relative;
+      top: 50%;
+      width: 10%;
+      position: absolute;
+      float: right;
+      left: 30%;
+      // border: 1px solid red;
+      & img {
+        float: right;
+        // border: 1px solid red;
+        width: 50%;
+      }
+    }
+
+    & .btn-forward {
+      cursor: pointer;
+      transform: perspective(1px) translateY(-50%);
+      position: relative;
+      top: 50%;
+      width: 10%;
+      position: absolute;
+      float: left;
+      rotate: 180;
+      left: 55%;
+      // border: 1px solid red;
+      & img {
+        float: right;
+        // border: 1px solid red;
+        width: 50%;
+      }
+    }
+    & .btn-play {
+      cursor: pointer;
+      margin: 0 auto;
+      width: 10%;
+      filter: drop-shadow(1px 1px 3px orange);
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.playlist {
+  font-family: "Ubuntu", sans-serif;
+  top: 60%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  & a ul,
+  li,
+  p,
+  span,
+  small {
+    // border: 1px solid red;
+    margin: 5px;
+    font-size: 12px;
+    list-style: none;
+  }
+
+  & li {
+    cursor: pointer;
+    border-top: 1px solid #ffe7c8;
+    padding: 10px;
+    margin: 0;
+  }
+  & img {
+    float: left;
+    margin-right: 10px;
+    width: 18px;
+  }
+  & a {
+    float: right;
+  }
+
+  & small {
+    color: grey;
+  }
+  // border: 1px solid red;
+}
